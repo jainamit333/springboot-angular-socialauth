@@ -60,8 +60,11 @@ task removeWebui(type: Delete) {
 	delete "${sourceSets.main.resources.srcDirs[0]}/webui"
 }
 
+
+
 task copyWebui(type: Copy) {
 	from "webui/dist"
+
 	into "${sourceSets.main.resources.srcDirs[0]}/webui"
 	exclude "*.gz"
 	//eachFile { println it.name }

@@ -13,12 +13,6 @@ import springfox.documentation.annotations.ApiIgnore;
 @Controller
 public class ViewController {
 
-//    @RequestMapping(value={"/"})
-//    public String index() {
-//        return "index.html";
-//    }
-
-
     @RequestMapping({ "/","/welcome" })
     public String views() {
         return "forward:/index.html";
